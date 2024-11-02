@@ -118,7 +118,7 @@ body {
 }
 
 .section--contact {
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid grey;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom: none;
@@ -254,7 +254,7 @@ body {
 }
 
 .section--gallery > .gallery__grid > .gallery__item > img {
-    width: 99.7%;
+    width: 100%;
     border-bottom: 1px solid rgb(128, 128, 128);
 }
 
@@ -321,6 +321,190 @@ body {
 
 .section--services > .section__content > .services__list > .service__item > .service__description {
     text-indent: 20px
+}
+
+.section--news > .section__title {
+    font-size: 1.2em;
+    text-align: center;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) -10%, rgb(128, 128, 128), rgba(255, 255, 255, 0) 110%);
+    padding: 10px;
+    text-indent: 10px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.section--news > .news__grid > .news__item {
+    display: block;
+    text-align: center;
+    border: 1px solid rgb(128, 128, 128);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(128, 128, 128, 0.354);
+}
+
+.section--news > .news__grid > .news__item > .news__img {
+    width: 100%;
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+
+.section--news > .news__grid > .news__item > .news__content > .news__title, .news__date, .news__summary {
+    text-align: left;
+}
+
+.section--news > .news__grid > .news__item > .news__content > .news__title {
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.section--news > .news__grid > .news__item > .news__content > .news__date  {
+    padding-left: 10px;
+    color: rgb(92, 92, 92);
+}
+
+.section--news > .news__grid > .news__item > .news__content > .news__summary {
+    padding: 10px;
+}
+
+.section--news > .news__grid > .news__item > .news__content > .btn-more {
+    margin-bottom: 10px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    border-style: solid;
+    border-color: gray;
+    color: gray;
+    transition: all 0.1s;
+}
+
+.section--news > .news__grid > .news__item > .news__content > .btn-more:hover {
+    margin-bottom: 10px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    border-style: solid;
+    border-color: gray;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 0.9em;
+    background-color: gray;
+    border-style: double;
+}
+
+.section--news > .news__grid > .news__item > .news__content > .btn-more:active {
+    margin-bottom: 10px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    border-style: solid;
+    border-color: rgb(128, 128, 128);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 0.9em;
+    background-color: rgb(77, 77, 77);
+    border-style: double;
+    text-shadow: 0px 0px 3px black;
+}
+
+.section--contact {
+    background-color: gray;
+}
+
+.section--contact > .section__content {
+    width: 90%;
+    background-color: beige;
+    border-radius: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.section--contact > .section__content > .section__title {
+    text-align: center;
+    background-color: rgb(76, 76, 76);
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.section--contact > .section__content > .contact__form > .form__group {
+    width: 85%; 
+    padding: 10px 0px;
+    margin: auto;
+}
+
+.section--contact > .section__content > .contact__form > .form__group > #message {
+    height: 100px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: gray;
+}
+
+.section--contact > .section__content > .contact__form > .form__group > .form__input {
+    width: 98%;
+    height: 30px;
+    margin-top: 3px;
+    border-radius: 15px;
+    border-color: grey;
+    border-style: solid;
+    text-indent: 10px;
+    background-color: rgb(174, 174, 174);
+}
+
+.section--contact > .section__content > .contact__form > .form__group > .form__label {
+    font-weight: bold;
+    color: rgb(83, 83, 83);
+}
+.section--contact > .section__content > .contact__form > .form__group > .form__label::after {
+    content: ':';
+}
+
+.section--contact > .section__content > .contact__form > .form__button {
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+    height: 50px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(76, 76, 76);
+    background-color: rgb(76, 76, 76);
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 22px;
+    margin-top: 10px;
+    transition: all 0.1s;
+}
+
+.section--contact > .section__content > .contact__form > .form__button:hover {
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+    height: 50px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(39, 39, 39);
+    background-color: rgb(39, 39, 39);
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 22px;
+    margin-top: 10px;
+}
+
+.section--contact > .section__content > .contact__form > .form__button:active {
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+    height: 50px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(39, 39, 39);
+    background-color: rgb(24, 24, 24);
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 22px;
+    margin-top: 10px;
 }
 
 /* Main syle configs (end) */
