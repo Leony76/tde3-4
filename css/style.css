@@ -1,19 +1,5 @@
 @charset "UTF-8";
 
-/* Media-Query config (start) */
-
-@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablets */
-
-}
-
-@media screen and (min-width: 992px) { /* Bigger screens */
-
-}
-
-/* Media-Query config (end) */
-/*##########################################################################*/
-/*##########################################################################*/
-/*##########################################################################*/
 /* Main syle configs (start) */
 
 body {
@@ -73,6 +59,8 @@ body {
 .section {
     width: 90vw;
     margin: 0 auto;
+    transition: width 0.25s, height 0.25s;
+    transition-timing-function: ease;
 }
 
 .section--intro {
@@ -551,3 +539,28 @@ body {
 }
 
 /* Main syle configs (end) */
+/*##########################################################################*/
+/*##########################################################################*/
+/*##########################################################################*/
+/* Media-Query config (start) */
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablets */
+    .section {
+        width: 80vw;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 992px) { /* Bigger screens */
+    .section {
+        width: 60vw;
+        margin: 0 auto;
+    }
+
+    .header > .header__container > .header__nav > .header__menu {
+        justify-content: center;
+        gap: 90px;
+    }
+}
+
+/* Media-Query config (end) */
