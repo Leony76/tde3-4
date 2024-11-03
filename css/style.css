@@ -32,6 +32,7 @@ body {
     padding: 10px;
     margin-top: 20px;
     background-color: gray;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.484);
 }
 
 .header > .header__container > .header__nav > .header__menu > .menu__item > a{
@@ -59,8 +60,9 @@ body {
 .section {
     width: 90vw;
     margin: 0 auto;
-    transition: width 0.25s, height 0.25s;
+    transition: width 0.1s, height 0.1s;
     transition-timing-function: ease;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.484);
 }
 
 .section--intro {
@@ -131,7 +133,7 @@ body {
     font-size: 1.5em;
     background-color: gray;
     padding: 5px;
-    color: rgb(211, 211, 211);
+    color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px black;
     text-indent: 5px;
     text-align: center;
@@ -233,7 +235,6 @@ body {
 .section--gallery > .gallery__grid > .gallery__item {
     display: block;
     text-align: center;
-    border: 1px solid rgb(128, 128, 128);
     margin-bottom: 10px;
     border-radius: 10px;
     overflow: hidden;
@@ -242,7 +243,6 @@ body {
 
 .section--gallery > .gallery__grid > .gallery__item > img {
     width: 100%;
-    border-bottom: 1px solid rgb(128, 128, 128);
 }
 
 .section--gallery > .gallery__grid > .gallery__item > figcaption {
@@ -325,7 +325,6 @@ body {
 .section--news > .news__grid > .news__item {
     display: block;
     text-align: center;
-    border: 1px solid rgb(128, 128, 128);
     margin-bottom: 10px;
     border-radius: 10px;
     overflow: hidden;
@@ -334,7 +333,6 @@ body {
 
 .section--news > .news__grid > .news__item > .news__img {
     width: 100%;
-    border-bottom: 1px solid rgb(128, 128, 128);
 }
 
 .section--news > .news__grid > .news__item > .news__content > .news__title, .news__date, .news__summary {
@@ -529,6 +527,10 @@ body {
     border-radius: 10px;
 }
 
+.footer > .footer__content > .footer__social > li > a:hover::before {
+    content: '🔗 ';
+}
+
 .footer > .footer__content > .footer__social > li > a:active {
     color: rgb(76, 76, 76);
     font-weight: bold;
@@ -539,9 +541,11 @@ body {
 }
 
 /* Main syle configs (end) */
+
 /*##########################################################################*/
 /*##########################################################################*/
 /*##########################################################################*/
+
 /* Media-Query config (start) */
 
 @media screen and (min-width: 768px) and (max-width: 992px) { /* Tablets */
@@ -549,17 +553,103 @@ body {
         width: 80vw;
         margin: 0 auto;
     }
+
+    .section--intro {
+        margin-top: 8px;
+        border: 1px solid rgb(255, 255, 255);
+        border-bottom: none;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .section--contact > .section__content {
+        width: 60%;
+        background-color: white;
+        border-radius: 10px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
 }
 
 @media screen and (min-width: 992px) { /* Bigger screens */
     .section {
-        width: 60vw;
+        width: 55vw;
         margin: 0 auto;
     }
 
     .header > .header__container > .header__nav > .header__menu {
         justify-content: center;
         gap: 90px;
+    }
+
+    .section--intro {
+        margin-top: 0px;
+        border: 1px solid rgb(255, 255, 255);
+        border-bottom: none;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .section--intro > .intro__banner > .intro__title {
+        font-size: 2em;
+        background-color: gray;
+        padding: 5px;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px black;
+        text-indent: 5px;
+        text-align: center;
+    }
+
+    .section--intro > .intro__banner > .intro__text {
+        text-align: center;
+        font-size: 1.1em;
+    }
+
+    .section--gallery > .gallery__grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .section--gallery > .gallery__grid > .gallery__item {
+        width: 45%;
+    }
+
+    .section--services > .section__content > .services__list > .service__item > .service__title {
+        font-size: 1.2em;
+    }
+
+    .section--news > .news__grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .section--news > .news__grid > .news__item {
+        width: 45%;
+    }
+
+    .section--contact > .section__content {
+        width: 60%;
+        background-color: white;
+        border-radius: 10px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .footer > .footer__content > .footer__social {
+        display: flex;
+        justify-content: center;
+        gap: 90px;
+        margin: 10px 0px;
+        margin-top: 17px;
     }
 }
 
