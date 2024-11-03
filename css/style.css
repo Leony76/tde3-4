@@ -5,7 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Passion One", serif;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    font-size: 1.1em;
+    color: #535353;
+    /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.492);*/
     background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/98895a95-bf39-4281-bf50-067d62dd71c5/d99pwxx-eb660be3-3d08-4fee-b933-1736f1456ef2.jpg/v1/fill/w_1024,h_576,q_75,strp/mad_max_game_intro_wallpaper_by_otrixx_d99pwxx-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc2IiwicGF0aCI6IlwvZlwvOTg4OTVhOTUtYmYzOS00MjgxLWJmNTAtMDY3ZDYyZGQ3MWM1XC9kOTlwd3h4LWViNjYwYmUzLTNkMDgtNGZlZS1iOTMzLTE3MzZmMTQ1NmVmMi5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.pLCSQwBwbKNHh4HjUFa1Q-AWjQscEqbY_j_73CZqjhM');
     background-size: cover;
     background-repeat: no-repeat;
@@ -45,26 +50,28 @@ body {
     margin-top: 20px;
     background-image: url('https://as1.ftcdn.net/v2/jpg/02/56/25/32/1000_F_256253244_8e2jM5FRxRDBc7k0wBUGAaKiyg3rJtuH.jpg');
     background-size: cover;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.484);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.484);
 }
 
 .header > .header__container > .header__nav > .header__menu > .menu__item > a{
     color: white;
+    font-size: 1.1em;
     text-decoration: none;
     transition: all .1s;
+    text-shadow: 2px 2px 1px black;
 }
 
 .header > .header__container > .header__nav > .header__menu > .menu__item > a:hover {
-    color: grey;
-    background-color: rgb(195, 195, 195);
+    color: #9AB6B9;
+    background-color: rgba(195, 195, 195, 0.529);
     font-weight: bold;
     padding: 5px;
     border-radius: 10px;
 }
 
 .header > .header__container > .header__nav > .header__menu > .menu__item > a:active {
-    color: grey;
-    background-color: rgb(143, 143, 143);
+    color: #d3f6fa;
+    background-color: rgba(255, 255, 255, 0.514);
     font-weight: bold;
     padding: 5px;
     border-radius: 10px;
@@ -121,10 +128,10 @@ body {
 
 .section--intro > .intro__banner > .intro__title {
     font-size: 1.5em;
-    background-image: linear-gradient(to top,#7f381a91,#C3915E, #93B2B5,#93B2B5);
+    background-image: linear-gradient(to top,#C3915E,#93B2B5 70%);
     padding: 5px;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.497);
     text-indent: 5px;
     text-align: center;
     border-bottom: 2px solid #93B2B5;
@@ -132,53 +139,61 @@ body {
 
 .section--intro > .intro__banner > .intro__text {
     text-align: center;
-    color: #DB8828;
-    text-shadow: 1px 2px 3px black;
+    color: #C3915E;
+    text-shadow: 1px 1px 1px black;
     font-weight: bold;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #93b2b587, rgba(255, 255, 255, 0) 100%);
+    padding: 2px;
 }
 
 .section--intro > .intro__banner > .intro__button {
-    color: #65c7d0;
+    color: #97B5B7;
     background-color: rgba(255, 255, 255, 0.086);
-    padding: 6px;
+    padding: 10px;
     border-radius: 10px;
     text-decoration: none;
     transition: 0.1s;
     width: fit-content;
     margin: 0 auto;
+    text-shadow: 1px 1px 1px black;
 }
 
 .section--intro > .intro__banner > .intro__button:hover {
     width: fit-content;
-    color: rgb(0, 230, 250);
+    color: rgb(0, 146, 159);
     text-shadow: 1px 1px 1px black;
     font-weight: bold;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.54);
     margin: 0 auto;
-    padding: 5px 30px;
+    padding: 10px 30px;
     border-radius: 10px;
 }
 
 .section--intro > .intro__banner > .intro__button:active {
     width: fit-content;
-    color: rgb(255, 255, 255);
+    color: rgb(2, 234, 255);
+    text-shadow: 1px 1px 1px black;
     font-weight: bold;
     text-decoration: none;
-    background-color: rgb(83, 83, 83);
+    background-color: rgba(126, 126, 126, 0.54);
     margin: 0 auto;
-    padding: 5px 30px;
+    padding: 10px 30px;
     border-radius: 10px;
 }
 
 .section--about > .section__content > .section__title {
-    font-size: 1.2em;
-    background-image: linear-gradient(to right,grey, transparent) ;
+    font-size: 1.5em;
+    background-image: linear-gradient(to right,#C3915E, transparent) ;
     padding: 5px;
+    padding-top: 7px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: "Bebas Neue", sans-serif;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     text-indent: 10px;
-    color: white;
+    color: #93B2B5;
     text-shadow: 1px 1px 1px black;
 }
 
@@ -190,23 +205,24 @@ body {
 
 .section--about > .section__content > .about__grid {
     display: flex;
-    border: 1px solid grey;
+    border: 3px solid #98AEAB;
     border-radius: 10px;
     overflow: hidden;
 }
 
 .section--about > .section__content > .about__grid > .about__item {
-    border: 1px solid grey;
+    border: 1px solid #98AEAB;
     justify-content: space-around;
 }
 
 .section--about > .section__content > .about__grid > .about__item > .about__subtitle {
-    font-size: 1.1em;
-    background-color: rgba(128, 128, 128, 0.886);
+    font-size: 1.3em;
+    background-image: linear-gradient(to top,#C3915E,#93B2B5 70%);
     padding: 4px;
     text-indent: 10px;
     color: white;
     text-shadow: 1px 1px 1px black;
+    border-bottom: 2px solid #93B2B5;
 }
 
 .section--about > .section__content > .about__grid > .about__item > .about__description {
@@ -215,16 +231,18 @@ body {
 }
 
 .section--gallery {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffffc2;
 }
 
 .section--gallery > .section__title {
-    font-size: 1.2em;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.8em;
     text-align: center;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(128, 128, 128), rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #93B2B5, rgba(255, 255, 255, 0) 100%);
     padding: 10px;
+    padding-top: 13px;
     text-indent: 10px;
-    color: white;
+    color: #C3915E;
     text-shadow: 1px 1px 1px black;
     margin-bottom: 20px;
     letter-spacing: 2px;
@@ -236,7 +254,18 @@ body {
     margin-bottom: 10px;
     border-radius: 10px;
     overflow: hidden;
-    background-color: rgba(128, 128, 128, 0.354);
+    background-color: #e5dac7a1;
+    transition: all 0.1s;
+}
+
+.section--gallery > .gallery__grid > .gallery__item:hover {
+    display: block;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.545);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #e5dac7a1;
 }
 
 .section--gallery > .gallery__grid > .gallery__item > img {
@@ -252,9 +281,10 @@ body {
     border-radius: 30px;
     padding: 10px 30px;
     border-style: solid;
-    border-color: gray;
-    color: gray;
+    border-color:  #93B2B5;
+    color:  #C3915E;
     transition: all 0.1s;
+    background-color: transparent;
 }
 
 .section--gallery > .gallery__grid > .gallery__item > .btn-more:hover {
@@ -262,11 +292,11 @@ body {
     border-radius: 30px;
     padding: 10px 30px;
     border-style: solid;
-    border-color: gray;
-    color: rgb(255, 255, 255);
+    border-color: #93B2B5;
+    color: #9e4f00;
     font-weight: bold;
     font-size: 0.9em;
-    background-color: gray;
+    background-color: #93b2b589;
     border-style: double;
 }
 
@@ -275,28 +305,38 @@ body {
     border-radius: 30px;
     padding: 10px 30px;
     border-style: solid;
-    border-color: rgb(128, 128, 128);
-    color: rgb(255, 255, 255);
+    border-color: #93B2B5;
+    color: #9e4f00;
     font-weight: bold;
     font-size: 0.9em;
-    background-color: rgb(77, 77, 77);
+    background-color: #93B2B5;
     border-style: double;
-    text-shadow: 0px 0px 3px black;
 }
 
 .section--services > .section__content > .section__title {
-    font-size: 1.2em;
-    background-image: linear-gradient(to right,grey, transparent) ;
+    font-size: 1.5em;
+    background-image: linear-gradient(to right,#C3915E, transparent) ;
     padding: 5px;
+    padding-top: 7px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: "Bebas Neue", sans-serif;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     text-indent: 10px;
-    color: white;
+    color: #93B2B5;
     text-shadow: 1px 1px 1px black;
 }
 
-.section--services > .section__content > .services__list > .service__item {
-    margin-left: 10px;
+.section--services > .section__content > .services__list {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+.section--services > .section__content > .services__list .service__title {
+    color: #D6B48F;
+    text-shadow: 1px 1px 1px black;
 }
 
 .section--services > .section__content > .services__list > .service__item > .service__title {
@@ -309,12 +349,14 @@ body {
 }
 
 .section--news > .section__title {
-    font-size: 1.2em;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.8em;
     text-align: center;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(128, 128, 128), rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #93B2B5, rgba(255, 255, 255, 0) 100%);
     padding: 10px;
+    padding-top: 13px;
     text-indent: 10px;
-    color: white;
+    color: #C3915E;
     text-shadow: 1px 1px 1px black;
     margin-bottom: 20px;
     letter-spacing: 2px;
@@ -326,7 +368,18 @@ body {
     margin-bottom: 10px;
     border-radius: 10px;
     overflow: hidden;
-    background-color: rgba(128, 128, 128, 0.354);
+    background-color: #e5dac7a1;
+    transition: all 0.1s;
+}
+
+.section--news > .news__grid > .news__item:hover {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #e5dac7a1;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.539);
 }
 
 .section--news > .news__grid > .news__item > .news__img {
@@ -340,11 +393,15 @@ body {
 .section--news > .news__grid > .news__item > .news__content > .news__title {
     font-size: 1.5em;
     padding: 10px;
+    color: #C3915E;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.495);
+    letter-spacing: 1.5px;
 }
 
 .section--news > .news__grid > .news__item > .news__content > .news__date  {
     padding-left: 10px;
-    color: rgb(92, 92, 92);
+    color: #96B4B7;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.495);
 }
 
 .section--news > .news__grid > .news__item > .news__content > .news__summary {
@@ -356,9 +413,10 @@ body {
     border-radius: 30px;
     padding: 10px 30px;
     border-style: solid;
-    border-color: gray;
-    color: gray;
+    border-color:  #93B2B5;
+    color:  #C3915E;
     transition: all 0.1s;
+    background-color: transparent;
 }
 
 .section--news > .news__grid > .news__item > .news__content > .btn-more:hover {
@@ -366,11 +424,11 @@ body {
     border-radius: 30px;
     padding: 10px 30px;
     border-style: solid;
-    border-color: gray;
-    color: rgb(255, 255, 255);
+    border-color: #93B2B5;
+    color: #9e4f00;
     font-weight: bold;
     font-size: 0.9em;
-    background-color: gray;
+    background-color: #93b2b589;
     border-style: double;
 }
 
@@ -379,17 +437,16 @@ body {
     border-radius: 30px;
     padding: 10px 30px;
     border-style: solid;
-    border-color: rgb(128, 128, 128);
-    color: rgb(255, 255, 255);
+    border-color: #93B2B5;
+    color: #9e4f00;
     font-weight: bold;
     font-size: 0.9em;
-    background-color: rgb(77, 77, 77);
+    background-color: #93B2B5;
     border-style: double;
-    text-shadow: 0px 0px 3px black;
 }
 
 .section--contact {
-    background-color: rgba(128, 128, 128, 0.577);
+    background-color: #c0d2d280;
 }
 
 .section--contact > .section__content {
@@ -402,7 +459,7 @@ body {
 
 .section--contact > .section__content > .section__title {
     text-align: center;
-    background-color: rgb(76, 76, 76);
+    background-color: #C3915E;
     color: white;
     font-size: 1.2em;
     padding: 10px;
@@ -422,7 +479,7 @@ body {
     border-radius: 5px;
     border-width: 2px;
     border-style: solid;
-    border-color: gray;
+    border-color: #8FAEB2;
 }
 
 .section--contact > .section__content > .contact__form > .form__group > .form__input {
@@ -430,7 +487,7 @@ body {
     height: 30px;
     margin-top: 3px;
     border-radius: 15px;
-    border-color: grey;
+    border-color: #8FAEB2;
     border-style: solid;
     text-indent: 10px;
     background-color: rgba(174, 174, 174, 0.54);
@@ -451,10 +508,12 @@ body {
     height: 50px;
     border-radius: 10px;
     border-style: solid;
-    border-color: rgb(76, 76, 76);
-    background-color: rgb(76, 76, 76);
+    border-color: #C3915E;
+    background-color: #C3915E;
+    font-family: "Passion One", serif;
+    letter-spacing: 2px;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-bottom: 22px;
     margin-top: 10px;
     transition: all 0.1s;
@@ -467,10 +526,10 @@ body {
     height: 50px;
     border-radius: 10px;
     border-style: solid;
-    border-color: rgb(39, 39, 39);
-    background-color: rgb(39, 39, 39);
+    border-color: #8b6844;
+    background-color: #8b6844;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-bottom: 22px;
     margin-top: 10px;
 }
@@ -482,16 +541,16 @@ body {
     height: 50px;
     border-radius: 10px;
     border-style: solid;
-    border-color: rgb(59, 59, 59);
-    background-color: rgb(24, 24, 24);
+    border-color: #604830;
+    background-color: #604830;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-bottom: 22px;
     margin-top: 10px;
 }
 
 .footer > .footer__content {
-    background: rgb(76, 76, 76);
+    background-image: linear-gradient(to bottom, #085B5F, #032122);
     margin-top: 10px;
     padding: 10px;
     border-top-left-radius: 10px;
@@ -501,6 +560,7 @@ body {
 .footer > .footer__content > .footer__text {
     color: white;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 .footer > .footer__content > .footer__social {
@@ -514,10 +574,11 @@ body {
     color: white;
     text-decoration: none;
     transition: all 0.1s;
+    letter-spacing: 1px;
 }
 
 .footer > .footer__content > .footer__social > li > a:hover {
-    color: rgb(76, 76, 76);
+    color: #053739;
     font-weight: bold;
     text-decoration: none;
     background-color: white;
@@ -530,7 +591,7 @@ body {
 }
 
 .footer > .footer__content > .footer__social > li > a:active {
-    color: rgb(76, 76, 76);
+    color: #032324;
     font-weight: bold;
     text-decoration: none;
     background-color: rgb(137, 137, 137);
@@ -657,6 +718,10 @@ body {
 /* images references 
 
 https://www.deviantart.com/otrixx/art/Mad-Max-game-intro-wallpaper-560521221
-https://stock.adobe.com/br/images/grunge-rusted-metal-texture-rusty-corrosion-and-oxidized-background-worn-metallic-iron-panel-abandoned-design-wall-copper-bar/256253244
+
+https://stock.adobe.com/br/images/
+grunge-rusted-metal-texture-rusty-corrosion-and-oxidized-background-worn-metallic-iron-panel-abandoned-design-wall-copper-bar/256253244
+
+https://br.pinterest.com/pin/mad-max-fury-road-vehicles-1920-x-1080-wallpaper-post--633318766373549585/
 
 */
