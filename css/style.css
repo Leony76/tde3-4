@@ -251,8 +251,10 @@ body {
 .section--gallery > .gallery__grid > .gallery__item {
     display: block;
     text-align: center;
+    margin: 0 auto;
     margin-bottom: 10px;
     border-radius: 10px;
+    max-width: 500px;
     overflow: hidden;
     background-color: #e5dac7a1;
     transition: all 0.1s;
@@ -364,9 +366,11 @@ body {
 
 .section--news > .news__grid > .news__item {
     display: block;
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 10px;
     border-radius: 10px;
+    max-width: 500px;
     overflow: hidden;
     background-color: #e5dac7a1;
     transition: all 0.1s;
@@ -490,7 +494,7 @@ body {
     border-color: #8FAEB2;
     border-style: solid;
     text-indent: 10px;
-    background-color: rgba(174, 174, 174, 0.54);
+    background-color: #8faeb23c;
 }
 
 .section--contact > .section__content > .contact__form > .form__group > .form__label {
@@ -622,6 +626,28 @@ body {
         padding: 10px;
     }
 
+    .section--gallery > .gallery__grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .section--news > .news__grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .section--gallery > .gallery__grid > .gallery__item {
+        width: 45%;
+    }
+
+    .section--news > .news__grid > .news__item {
+        width: 45%;
+    }
+
     .section--contact > .section__content {
         width: 60%;
         border-radius: 10px;
@@ -641,6 +667,7 @@ body {
     .section {
         width: 55vw;
         margin: 0 auto;
+        max-width: 1000px;
     }
 
     .header > .header__container > .header__nav > .header__menu {
@@ -675,7 +702,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 40px;
+        gap: 30px;
     }
 
     .section--gallery > .gallery__grid > .gallery__item {
