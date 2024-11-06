@@ -530,6 +530,10 @@ body {
     border-color: #8FAEB2;
 }
 
+.section--contact > .section__content > .contact__form > .form__group > #message:focus {
+    border-color: #C3915E;
+}
+
 .section--contact > .section__content > .contact__form > .form__group > .form__input {
     width: 98%;
     height: 30px;
@@ -539,6 +543,11 @@ body {
     border-style: solid;
     text-indent: 10px;
     background-color: #8faeb23c;
+}
+
+.section--contact > .section__content > .contact__form > .form__group > .form__input:focus {
+    border-color: #C3915E;
+    outline: none;
 }
 
 .section--contact > .section__content > .contact__form > .form__group > .form__label {
