@@ -85,7 +85,6 @@ body {
 
 .section--intro {
     margin-top: 8px;
-    border: 1px solid rgb(255, 255, 255);
     border-bottom: none;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -94,7 +93,6 @@ body {
 }
 
 .section--about, .section--gallery, .section--services, .section--news  {
-    border: 1px solid rgb(255, 255, 255);
     border-bottom: none;
     border-top: none;
     padding: 10px;
@@ -123,7 +121,6 @@ body {
     background-image: url('https://i.pinimg.com/originals/05/9b/56/059b56178e73c54b31cc29651ac1f73a.jpg');
     background-size: cover;
     background-position: center 60%;
-    /*transition: transform 0.3s ease, box-shadow 0.3s ease;*/
     transition: all 0.1s;
 }
 
@@ -337,6 +334,7 @@ body {
     background-color: #93b2b589;
     border-style: double;
     font-size: 1.1em;
+    cursor: pointer;
 }
 
 .section--gallery > .gallery__grid > .gallery__item > .btn-more:active {
@@ -477,6 +475,7 @@ body {
     background-color: #93b2b589;
     border-style: double;
     font-size: 1.1em;
+    cursor: pointer;
 }
 
 .section--news > .news__grid > .news__item > .news__content > .btn-more:active {
@@ -495,6 +494,7 @@ body {
 
 .section--contact {
     background-color: #c0d2d280;
+    border: none;
 }
 
 .section--contact > .section__content {
@@ -589,6 +589,7 @@ body {
     font-size: 1.3em;
     margin-bottom: 22px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .section--contact > .section__content > .contact__form > .form__button:active {
@@ -672,7 +673,6 @@ body {
 
     .section--intro {
         margin-top: 8px;
-        border: 1px solid rgb(255, 255, 255);
         border-bottom: none;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -683,14 +683,14 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 40px;
+        gap: 10px;
     }
 
     .section--news > .news__grid {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 30px;
+        gap: 10px;
     }
 
     .section--gallery > .gallery__grid > .gallery__item {
@@ -730,7 +730,6 @@ body {
 
     .section--intro {
         margin-top: 0px;
-        border: 1px solid rgb(255, 255, 255);
         border-bottom: none;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
@@ -755,7 +754,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 30px;
+        gap: 10px;
     }
 
     .section--gallery > .gallery__grid > .gallery__item {
@@ -770,7 +769,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 30px;
+        gap: 10px;
     }
 
     .section--news > .news__grid > .news__item {
